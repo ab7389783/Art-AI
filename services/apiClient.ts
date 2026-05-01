@@ -4,13 +4,13 @@ import { AuthService } from "./apiKeyService";
 
 // Centralized Constants
 // Defaults (can be overridden by user settings)
-export const DEFAULT_IMAGE_MODEL = 'gemini-2.5-flash-image';
+export const DEFAULT_IMAGE_MODEL = 'gemini-3.1-flash-image-preview';
 export const DEFAULT_VIDEO_MODEL = 'veo-2.0-generate-001';
 
 export const AVAILABLE_IMAGE_MODELS = [
   { id: 'gemini-3.1-flash-image-preview-4k', label: 'Nano Banana 2 (4K)' },
-  { id: 'gemini-3.1-flash-image-preview', label: 'Nano Banana 2 (2K)' },
-  { id: 'gemini-2.5-flash-image', label: 'Nano Banana (1080p)' },
+  { id: 'gemini-3.1-flash-image-preview-2K', label: 'Nano Banana 2 (2K)' },
+  { id: 'gemini-3.1-flash-image-preview', label: 'Nano Banana 2 (1080p)' },
 ];
 
 export const AVAILABLE_VIDEO_MODELS = [
