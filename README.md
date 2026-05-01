@@ -1,52 +1,55 @@
 # Art AI
 
-A Vite + React application for interactive AI-assisted art creation, asset management, and visual simulation.
+![Art AI Logo](./icon.svg)
 
-## Features
+A lightweight Vite + React app for AI-assisted art creation with a BYOK (Bring Your Own Key) Gemini integration.
 
-- Modern React UI with viewport, control panel, gallery, logs, and settings
-- Gemini API integration for AI-driven asset generation
-- Gallery management and asset uploads
-- Toast notifications, logs overlay, and responsive canvas layout
-- GitHub Pages deployment via GitHub Actions
+## Quick Start
 
-## API Key Setup (BYOK - Bring Your Own Key)
+### 1. Install
 
-This application uses Google's Gemini AI API. You must provide your own API key to use the application.
+```bash
+npm install
+```
 
-### How to get a Gemini API key:
+### 2. Run locally
 
-1. Visit [Google AI Studio](https://aistudio.google.com/)
-2. Sign in with your Google account
-3. Create a new API key or use an existing one
-4. Copy the API key
+```bash
+npm run dev
+```
 
-### How to use the API key in the application:
+Open `http://localhost:3000` and enter your Gemini API key in the app settings.
 
-1. Open the application in your browser
-2. Click the settings icon (⚙️) in the top-right corner
-3. Go to the "API Settings" section
-4. Enter your Gemini API key in the input field
-5. Click "Save" to store the key securely in your browser's local storage
+## How it works
 
-**Important Notes:**
-- Your API key is stored locally in your browser and never sent to our servers
-- The API key is required for all AI-powered features to work
-- Keep your API key secure and do not share it with others
-- You are responsible for any usage costs associated with your API key
+- No API key is stored in source code
+- API key is entered through the UI and kept locally in browser storage
+- This app uses a Gemini key you bring yourself
 
-## Local development
+## Build
 
-### Prerequisites
+```bash
+npm run build
+```
 
-- Node.js 18+ or 20+
+## Deployment
 
-### Setup
+This repo deploys automatically from `main` to the root folder via GitHub Actions.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+Set GitHub Pages source to:
+- Branch: `main`
+- Folder: `/(root)`
+
+## Usage policy
+
+**Personal/non-commercial use only.**
+
+Commercial use, resale, and paid redistribution are prohibited without written permission.
+
+## Notes
+
+- Keep your Gemini API key private
+- The app only works with a valid Gemini key provided through the UI
 
 2. Start the app locally:
    ```bash
