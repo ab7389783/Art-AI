@@ -36,9 +36,8 @@ export const executeImageGeneration = async (
     const imageConfig: any = { aspectRatio: '9:16' };
 
     if (model === 'gemini-3.1-flash-image-preview-4k') {
-        apiModel = 'gemini-3.1-flash-image-preview';
         imageConfig.imageSize = '4K';
-    } else if (model === 'gemini-3.1-flash-image-preview') {
+    } else if (model === 'gemini-3.1-flash-image-preview-2k') {
         imageConfig.imageSize = '2K';
     }
 
